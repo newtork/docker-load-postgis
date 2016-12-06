@@ -3,6 +3,8 @@ A container to load PostgreSQL database dumps with GIS data.
 
 Please only use it in development, since unsave settings have been made for authentication and connectivity. For connecting, the default user is "*postgres*" and password "*postgres*". The default password can be changed in the build file: ``Dockerfile`` > ``POSTGRES_PW``
 
+The container will **not** save your changes on the database. Its sole purpose is to load an empty or locally saved database file.
+
 ---
 
 ### Usage
